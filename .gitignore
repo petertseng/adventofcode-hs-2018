@@ -1,0 +1,4 @@
+dist-newstyle/
+.ghc.environment.*
+secrets
+y201[5678]
