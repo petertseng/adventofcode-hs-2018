@@ -18,3 +18,9 @@ library aocsplit
   exposed-modules: AdventOfCode.Split
   ghc-options:     -Wall
   build-depends:   base
+
+executable 01_frequency_deltas
+  build-depends:  base, adventofcode2018
+  hs-source-dirs: bin
+  main-is:        01_frequency_deltas.hs
+  ghc-options:    -Wall
