@@ -40,3 +40,8 @@ library aocsplit
   hs-source-dirs:  lib
   exposed-modules: AdventOfCode.Split
   build-depends:   base
+
+executable 01_frequency_deltas
+  import: bin, flags
+  build-depends: base, adventofcode2018
+  main-is:       01_frequency_deltas.hs
