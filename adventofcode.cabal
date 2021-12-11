@@ -45,3 +45,8 @@ executable 01_frequency_deltas
   import: bin, flags
   build-depends: base, adventofcode2018
   main-is:       01_frequency_deltas.hs
+
+executable 02_inventory_management
+  import: bin, flags
+  build-depends: base, adventofcode2018, containers
+  main-is:       02_inventory_management.hs
