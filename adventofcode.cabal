@@ -75,3 +75,8 @@ executable 07_topological
   import: bin, flags
   build-depends: base, adventofcode2018, containers
   main-is:       07_topological.hs
+
+executable 08_metadata_tree
+  import: bin, flags
+  build-depends: base, adventofcode2018
+  main-is:       08_metadata_tree.hs
