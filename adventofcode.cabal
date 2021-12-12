@@ -70,3 +70,8 @@ executable 06_chronal_coordinates
   import: bin, flags
   build-depends: base, adventofcode2018, array
   main-is:       06_chronal_coordinates.hs
+
+executable 07_topological
+  import: bin, flags
+  build-depends: base, adventofcode2018, containers
+  main-is:       07_topological.hs
