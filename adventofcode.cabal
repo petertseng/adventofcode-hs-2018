@@ -85,3 +85,8 @@ executable 09_marble_mania
   -- not currently using containers, but kept for easy comparison
   build-depends: base, array, containers
   main-is:       09_marble_mania.hs
+
+executable 10_the_stars_align
+  import: bin, flags
+  build-depends: base, adventofcode2018, aocsplit, containers
+  main-is:       10_the_stars_align.hs
