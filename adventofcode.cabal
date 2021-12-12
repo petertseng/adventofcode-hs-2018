@@ -92,3 +92,8 @@ executable 10_the_stars_align
   import: bin, flags
   build-depends: base, adventofcode2018, aocsplit, containers
   main-is:       10_the_stars_align.hs
+
+executable 11_max_square
+  import: bin, flags
+  build-depends: base, array
+  main-is:       11_max_square.hs
