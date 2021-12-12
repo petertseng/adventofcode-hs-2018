@@ -50,3 +50,8 @@ executable 02_inventory_management
   import: bin, flags
   build-depends: base, adventofcode2018, containers
   main-is:       02_inventory_management.hs
+
+executable 03_grid_claims
+  import: bin, flags
+  build-depends: base, adventofcode2018, aocsplit, array, containers
+  main-is:       03_grid_claims.hs
