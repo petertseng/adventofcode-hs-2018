@@ -79,3 +79,9 @@ executable 08_metadata_tree
   import: bin, flags
   build-depends: base, adventofcode2018
   main-is:       08_metadata_tree.hs
+
+executable 09_marble_mania
+  import: bin, flags
+  -- not currently using containers, but kept for easy comparison
+  build-depends: base, array, containers
+  main-is:       09_marble_mania.hs
