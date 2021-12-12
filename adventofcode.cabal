@@ -60,3 +60,8 @@ executable 04_repose_record
   import: bin, flags
   build-depends: base, adventofcode2018, containers
   main-is:       04_repose_record.hs
+
+executable 05_alchemical_reduction
+  import: bin, flags
+  build-depends: base, adventofcode2018
+  main-is:       05_alchemical_reduction.hs
