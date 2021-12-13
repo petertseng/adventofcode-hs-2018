@@ -41,6 +41,12 @@ library aocasm
   exposed-modules: AdventOfCode.Assembly
   build-depends:   base, containers
 
+library aocsearch
+  import: flags
+  hs-source-dirs:  lib
+  exposed-modules: AdventOfCode.Search
+  build-depends:   base, containers
+
 library aocsplit
   import: flags
   hs-source-dirs:  lib
@@ -123,3 +129,8 @@ executable 19_go_with_the_flow
   import: bin, flags
   build-depends: base, adventofcode2018, aocasm, array, containers
   main-is:       19_go_with_the_flow.hs
+
+executable 20_a_regular_map
+  import: bin, flags
+  build-depends: base, adventofcode2018, aocsearch, containers
+  main-is:       20_a_regular_map.hs
