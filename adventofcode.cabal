@@ -35,6 +35,12 @@ library
   exposed-modules: AdventOfCode
   build-depends:   base
 
+library aocasm
+  import: flags
+  hs-source-dirs:  lib
+  exposed-modules: AdventOfCode.Assembly
+  build-depends:   base, containers
+
 library aocsplit
   import: flags
   hs-source-dirs:  lib
@@ -102,3 +108,8 @@ executable 13_mine_cart_madness
   import: bin, flags
   build-depends: base, adventofcode2018, array
   main-is:       13_mine_cart_madness.hs
+
+executable 16_chronal_classification
+  import: bin, flags
+  build-depends: base, adventofcode2018, aocasm, aocsplit, containers
+  main-is:       16_chronal_classification.hs
