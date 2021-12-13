@@ -149,3 +149,8 @@ executable 24_immune_system_sim
   import: bin, flags
   build-depends: base, adventofcode2018, aocsplit, containers
   main-is:       24_immune_system_sim.hs
+
+executable 25_4d_adventure
+  import: bin, flags
+  build-depends: base, adventofcode2018, aocsplit, array
+  main-is:       25_4d_adventure.hs
