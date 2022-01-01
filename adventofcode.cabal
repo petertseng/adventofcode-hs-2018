@@ -113,3 +113,8 @@ executable 16_chronal_classification
   import: bin, flags
   build-depends: base, adventofcode2018, aocasm, aocsplit, containers
   main-is:       16_chronal_classification.hs
+
+executable 17_reservoir_research
+  import: bin, flags
+  build-depends: base, adventofcode2018, aocsplit, containers
+  main-is:       17_reservoir_research.hs
