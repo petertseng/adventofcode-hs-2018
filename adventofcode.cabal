@@ -134,3 +134,8 @@ executable 20_a_regular_map
   import: bin, flags
   build-depends: base, adventofcode2018, aocsearch, containers
   main-is:       20_a_regular_map.hs
+
+executable 21_chronal_conversion
+  import: bin, flags
+  build-depends: base, adventofcode2018, aocasm, array, containers
+  main-is:       21_chronal_conversion.hs
