@@ -118,3 +118,8 @@ executable 17_reservoir_research
   import: bin, flags
   build-depends: base, adventofcode2018, aocsplit, containers
   main-is:       17_reservoir_research.hs
+
+executable 19_go_with_the_flow
+  import: bin, flags
+  build-depends: base, adventofcode2018, aocasm, array, containers
+  main-is:       19_go_with_the_flow.hs
