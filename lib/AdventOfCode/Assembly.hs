@@ -1,7 +1,9 @@
 module AdventOfCode.Assembly (
+  Inst,
   Op(..),
   Regs,
   exec,
+  inst,
   regsFromList,
 ) where
 
@@ -46,3 +48,27 @@ btoi f a b = if f a b then 1 else 0
 
 regsFromList :: [Int] -> Regs
 regsFromList = IntMap.fromAscList . zip [0..]
+
+inst :: String -> Inst
+inst s = case words s of
+  [a, b, c, d] -> (op a, read b, read c, read d)
+  _ -> error ("bad inst " ++ s)
+
+op :: String -> Op
+op "addr" = Addr
+op "addi" = Addi
+op "mulr" = Mulr
+op "muli" = Muli
+op "banr" = Banr
+op "bani" = Bani
+op "borr" = Borr
+op "bori" = Bori
+op "setr" = Setr
+op "seti" = Seti
+op "gtir" = Gtir
+op "gtri" = Gtri
+op "gtrr" = Gtrr
+op "eqir" = Eqir
+op "eqri" = Eqri
+op "eqrr" = Eqrr
+op s = error ("bad op " ++ s)
