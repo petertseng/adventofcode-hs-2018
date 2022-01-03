@@ -144,3 +144,8 @@ executable 22_mode_maze
   import: bin, flags
   build-depends: base, aocsearch, array
   main-is:       22_mode_maze.hs
+
+executable 24_immune_system_sim
+  import: bin, flags
+  build-depends: base, adventofcode2018, aocsplit, containers
+  main-is:       24_immune_system_sim.hs
